@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.FXMLDocumentController">
+    <children>
+        <VBox maxHeight="100.0" maxWidth="500.0" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #D3D3D3;">
+            <children>
+                <Label prefHeight="35.0" prefWidth="279.0" text="Bem-vindo ao Meu Site" textFill="#2600ff">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="6.0" top="15.0" />
+                    </VBox.margin>
+                </Label>
+                <Label prefHeight="17.0" prefWidth="179.0" text="Este é um parágrafo de exemplo" textFill="#119702">
+                    <VBox.margin>
+                        <Insets bottom="16.0" />
+                    </VBox.margin>
+                </Label>
+                <ImageView fx:id="imageView" fitHeight="260.0" fitWidth="360.0" pickOnBounds="true" preserveRatio="true">
+                    <VBox.margin>
+                        <Insets left="10.0" top="20.0" />
+                    </VBox.margin>
+                </ImageView>
+            </children>
+            <StackPane.margin>
+                <Insets top="5.0" />
+            </StackPane.margin>
+        </VBox>
+        <VBox maxHeight="80.0" maxWidth="500.0" style="-fx-background-color: #D3D3D3;">
+            <children>
+                <Label text="Seção Importante">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" top="15.0" />
+                    </VBox.margin>
+                </Label>
+                <Label text="Esta é uma seção com conteúdo relevante" textFill="#119702">
+                    <VBox.margin>
+                        <Insets left="10.0" />
+                    </VBox.margin>
+                </Label>
+
+            </children>
+            <StackPane.margin>
+                <Insets top="420.0" />
+            </StackPane.margin>
+        </VBox>
+        <HBox maxHeight="40.0" maxWidth="500.0" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #D3D3D3;">
+            <children>
+
+                <Button id="BT1" fx:id="waifuButton" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: red;" text="go to isekai" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="5.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+            <StackPane.margin>
+                <Insets top="90.0" />
+            </StackPane.margin>
+        </HBox>
+    </children>
+    <padding>
+        <Insets bottom="15.0" />
+    </padding>
+</StackPane>
